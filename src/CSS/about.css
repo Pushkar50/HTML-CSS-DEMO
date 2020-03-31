@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+nav {
+  margin: 0;
+  width: 100vw;
+  height: 500px;
+  background-image: url("../Images/blog/header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  nav .pp .logo {
+    max-width: 166px;
+    margin: 34px 0 34px 70px; }
+    nav .pp .logo img {
+      height: auto;
+      width: 100%; }
+  nav div.pp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #121c2e;
+    max-width: 100%;
+    width: 300px;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 1;
+    transform: translateX(-520px);
+    transition: transform 0.5s ease-in; }
+  nav .blog-content {
+    color: white;
+    position: absolute;
+    margin-top: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.desktop-view {
+  display: none; }
+
+nav .blog-content > * {
+  text-align: center;
+  padding: 10px 30px;
+  margin: 0 20px; }
+
+nav .blog-content span {
+  padding-left: 15px; }
+  nav .blog-content span::before {
+    border-radius: 3px;
+    background-color: green;
+    width: 6px;
+    height: 6px;
+    position: absolute; }
+
+.nav-links > li:nth-child(odd) {
+  padding: 10px;
+  border-top: #292828 solid 1px;
+  border-bottom: #292828 solid 1px;
+  font-size: 14px;
+  list-style: none;
+  position: relative; }
+
+.nav-links > li:nth-child(even) {
+  padding: 10px;
+  font-size: 14px;
+  list-style: none;
+  position: relative; }
+
+ul.nav-links > li:first-child > a::after {
+  content: ">";
+  margin-left: 20px; }
+
+ul.nav-links ul {
+  display: none; }
+
+ul.nav-links li:hover > ul {
+  display: block;
+  opacity: 1; }
+
+ul li ul {
+  display: block;
+  opacity: 1; }
+
+ul.nav-links ul li {
+  padding: 10px 0;
+  list-style: none;
+  border-bottom: #292828 solid 1px; }
+  ul.nav-links ul li:last-child {
+    padding-top: 10px;
+    list-style: none;
+    border: none; }
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 24px; }
+
+nav div.pp form#formSearch {
+  margin-top: 20px;
+  margin-left: 64px; }
+  nav div.pp form#formSearch #search {
+    height: 24px;
+    background-image: url("../Images/Icons/searchIcon.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    border: none;
+    border-radius: 5px;
+    padding-right: 12px; }
+
+nav > .logo {
+  float: left;
+  max-width: 166px;
+  margin: 0px; }
+  nav > .logo img {
+    width: 100%;
+    margin: 34px; }
+
+.menu-button {
+  float: right;
+  margin: 34px; }
+  .menu-button div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff6f6;
+    margin: 5px;
+    transition: all .3s ease; }
+
+.line1.toggle {
+  transform: rotate(-45deg) translate(-5px, 6px); }
+
+.line2.toggle {
+  opacity: 0; }
+
+.line3.toggle {
+  transform: rotate(45deg) translate(-5px, -6px); }
+
+nav div.pp.show {
+  transform: translateX(-40px); }
+
+.searchModal {
+  display: none; }
+  .searchModal.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #212424; }
+  .searchModal div.search-close {
+    position: absolute;
+    display: inline-block;
+    left: 92%;
+    top: 40px; }
+  .searchModal form {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none; }
+    .searchModal form input#search {
+      width: 100%;
+      background-color: transparent;
+      border: 0;
+      padding: 12px;
+      border-bottom: 1px solid #748494;
+      font-size: 32px; }
+      .searchModal form input#search:focus {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        padding: 12px;
+        border-bottom: 1px solid #748494;
+        font-size: 32px; }
+    .searchModal form button.search-submit-button {
+      position: absolute;
+      left: 90%;
+      top: 12px;
+      width: 32px;
+      height: 32px;
+      background-image: url("../Images/About/enter.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      font-weight: normal;
+      border: none;
+      background-color: transparent; }
+
+main {
+  margin: 45px auto 10px; }
+  main section.about-us-section {
+    color: #1292ee;
+    margin-bottom: 20px;
+    padding: 0 20px; }
+    main section.about-us-section h2 {
+      color: #071e57;
+      line-height: 1.5;
+      font-weight: 700;
+      font-size: 2em; }
+    main section.about-us-section p {
+      color: #748494;
+      line-height: 2;
+      font-weight: normal;
+      max-width: 540px;
+      margin-bottom: 25px; }
+    main section.about-us-section div.completedProjects div {
+      display: block;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f1f1f1; }
+      main section.about-us-section div.completedProjects div h2 {
+        color: #1292ee;
+        font-weight: 500; }
+      main section.about-us-section div.completedProjects div h5 {
+        color: #071e57;
+        font-weight: bolder; }
+  main section.about-us-detail {
+    margin: 0;
+    padding: 20px 0;
+    background-color: #f8faff;
+    text-align: center; }
+  main div.main-tiles {
+    background-color: #fff;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center; }
+    main div.main-tiles img {
+      margin-bottom: 20px; }
+    main div.main-tiles p {
+      margin: 20px 0; }
+    main div.main-tiles a {
+      text-decoration: none;
+      color: #1292ee; }
+  main div.solar-system-container {
+    width: 100%; }
+    main div.solar-system-container .solar-sytem-image img {
+      width: 100%; }
+    main div.solar-system-container div.solar-system-info {
+      margin-top: 40px;
+      margin-left: 20px; }
+      main div.solar-system-container div.solar-system-info h4 {
+        color: #1292ee;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: lighter; }
+      main div.solar-system-container div.solar-system-info h2 {
+        color: #071e57;
+        margin-bottom: 20px;
+        font-size: 32px;
+        font-weight: lighter; }
+      main div.solar-system-container div.solar-system-info > p {
+        color: #748494;
+        margin-bottom: 20px;
+        line-height: 1.6; }
+      main div.solar-system-container div.solar-system-info div.checked p {
+        color: #748494;
+        margin-bottom: 10px; }
+        main div.solar-system-container div.solar-system-info div.checked p::before {
+          content: '\2713';
+          font-weight: bolder;
+          display: inline-block;
+          color: green;
+          padding: 0 6px 0 0; }
+      main div.solar-system-container div.solar-system-info div.button-container a {
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        border: none;
+        background-color: #2ed47d;
+        border-radius: 2px; }
+  main div#about-us-service {
+    background-color: #f8faff;
+    text-align: center;
+    margin: 40px 0 0;
+    padding: 40px 0; }
+    main div#about-us-service > * {
+      margin: 40px 0; }
+    main div#about-us-service h2 {
+      color: #071e57;
+      font-weight: lighter;
+      font-size: 32px; }
+  main div#tiles-container {
+    position: relative; }
+    main div#tiles-container .tiles {
+      margin: 40px auto;
+      display: inline-block;
+      width: 90%;
+      background-color: #f8faff;
+      overflow: hidden;
+      word-wrap: break-word;
+      padding: 40px 20px 60px 20px; }
+      main div#tiles-container .tiles img {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 10px 5px; }
+      main div#tiles-container .tiles h2 {
+        margin: 5px 5px; }
+      main div#tiles-container .tiles h5 {
+        margin: 5px 5px 15px 5px; }
+  main div#about-us-service div h2 {
+    color: #2ed47d;
+    font-weight: lighter;
+    font-size: 32px; }
+  main div.dot-container {
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); }
+
+nav .searchIcon {
+  display: none; }
+
+main div.dot-container .dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #17613b;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  margin: 5px;
+  cursor: pointer; }
+
+main .main-content .dot-container .dot:hover {
+  transform: scale(1.4);
+  background-color: #56f0a0; }
+
+.dot.active {
+  transform: scale(1.4);
+  background-color: #56f0a0; }
+
+footer #subscribe {
+  background-image: url("../Images/blog/footer-section-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px;
+  font-size: 32px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff; }
+
+footer #footer-form input {
+  margin-top: 40px;
+  height: 40px;
+  max-width: 100%;
+  width: 400px;
+  border: 0;
+  border-radius: 2px;
+  padding: 0 10px;
+  background-image: url("../Images/blog/footer-send1.png");
+  background-repeat: no-repeat;
+  background-position: right; }
+
+footer #footer-content-container {
+  box-sizing: border-box;
+  background-color: #1d2b37;
+  color: #fff;
+  padding: 10px; }
+  footer #footer-content-container .footer-contact {
+    margin: 20px;
+    font-weight: 400; }
+    footer #footer-content-container .footer-contact img {
+      max-width: 166px;
+      height: auto; }
+    footer #footer-content-container .footer-contact p:last-child {
+      margin-top: 20px;
+      color: #748494; }
+  footer #footer-content-container .footer-content {
+    margin: 40px;
+    font-weight: 400; }
+    footer #footer-content-container .footer-content ul {
+      list-style: none;
+      margin-top: 10px;
+      padding: 0; }
+      footer #footer-content-container .footer-content ul > * {
+        left: 0;
+        margin: 10px 0;
+        color: #748494; }
+
+main #side-content-container {
+  display: none; }
+
+footer #copyright {
+  width: 100%;
+  border-top: 1px solid #748494;
+  padding-top: 20px;
+  margin: 20px auto 0 auto;
+  text-align: center; }
+  footer #copyright span {
+    color: #748494; }
+
+@media screen and (min-width: 768px) {
+  main section.about-us-section div.about-us-section-left {
+    float: left;
+    width: 50%; }
+    main section.about-us-section div.about-us-section-left > div {
+      float: left;
+      width: 50%; }
+  main section.about-us-section div.about-us-section-right {
+    float: right;
+    width: 50%; }
+    main section.about-us-section div.about-us-section-right img {
+      float: right;
+      width: 100%; }
+  main section.about-us-section::after {
+    content: "";
+    clear: both;
+    display: block; }
+  main div.main-tiles {
+    float: left;
+    width: 30%;
+    margin: 0 10px; }
+  main section.about-us-detail::after {
+    content: "";
+    clear: both;
+    display: block; }
+  main div.solar-system-container .solar-sytem-image {
+    display: inline-block;
+    width: 50%; }
+    main div.solar-system-container .solar-sytem-image img {
+      width: 90%; }
+  main div.solar-system-container .solar-system-info {
+    display: inline-block;
+    width: 40%; }
+  main div#about-us-service div.spendings {
+    display: inline-block;
+    width: 20%;
+    margin-left: 10px; }
+  #footer-content-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+  #copyright {
+    grid-column: 1 / 6;
+    grid-row: 2; }
+  footer #footer-content-container .footer-content {
+    margin: 20px;
+    font-weight: 400; } }
+
+@media screen and (min-width: 992px) {
+  .menu-button {
+    display: none; }
+  header {
+    overflow-x: hidden; }
+  nav div.pp, .pp.show {
+    display: none; }
+  .desktop-view {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    float: right;
+    width: 70%;
+    margin: 20px auto; }
+    .desktop-view ul {
+      margin: 0;
+      padding: 0; }
+      .desktop-view ul.nav-links > li {
+        position: relative;
+        padding: 0;
+        margin: 10px; }
+      .desktop-view ul.nav-links ul {
+        top: 100%;
+        left: 0;
+        position: absolute; }
+      .desktop-view ul.nav-links li:hover > ul {
+        padding: 0;
+        display: block;
+        margin: 0;
+        opacity: 1; }
+    .desktop-view .nav-links {
+      display: flex; }
+      .desktop-view .nav-links > li:nth-child(odd) {
+        padding: 0;
+        border-top: none;
+        border-bottom: none;
+        font-size: 14px;
+        list-style: none;
+        position: relative; }
+      .desktop-view .nav-links > li:nth-child(even) {
+        padding: 0;
+        font-size: 14px;
+        list-style: none;
+        position: relative; }
+  header nav .logo img {
+    margin: 20px 0 0 60px; }
+  nav div.desktop-view form#formSearch {
+    display: none; }
+  nav .searchIcon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px; }
+    nav .searchIcon img {
+      width: 100%;
+      height: 100%; }
+  nav .desktop-view > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 2px; } }
