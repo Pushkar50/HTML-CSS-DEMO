@@ -33,3 +33,14 @@ dotContainer.addEventListener('click',()=>{
 
 
 showImage(currentImage);
+
+var searchIcon = document.getElementsByClassName('searchIcon')[0];
+searchIcon.addEventListener('click',() => {
+	document.querySelector('.searchModal').classList.toggle('active');
+});
+
+var searchModalClose = document.getElementsByClassName('search-close')[0];
+searchModalClose.addEventListener('click',() => {
+	document.querySelector('.searchModal').classList.toggle('active');
+
+});

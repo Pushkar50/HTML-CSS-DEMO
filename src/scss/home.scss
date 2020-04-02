@@ -184,6 +184,7 @@ nav {
     width: 100vw;
     height: 100vh;
     background-color: #212424;
+    z-index: 9999;
   }
 
   div.search-close {
@@ -225,7 +226,9 @@ nav {
       top: size(12);
       width: size(32);
       height: size(32);
-      
+      background-image: url("../Images/About/enter.png");
+      background-position: center;
+      background-repeat: no-repeat;
       font-weight: normal;
       border: none;
       background-color: transparent;

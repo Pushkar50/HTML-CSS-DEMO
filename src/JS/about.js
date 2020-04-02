@@ -3,9 +3,11 @@ import '../scss/about.scss';
 
 var button =document.querySelector('.menu-button');
 button.addEventListener('click', () => {
+	
 	document.querySelector('nav div.pp').classList.toggle('show');
-	for(var i=0; i<button.children.length; i+1){
+	for(var i=0; i<button.children.length; i+=1){
 		button.children[i].classList.toggle('toggle');
+		console.log("------------------------");
 	}       
 });
 
